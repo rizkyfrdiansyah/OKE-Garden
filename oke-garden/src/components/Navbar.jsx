@@ -65,7 +65,7 @@ function Navbar() {
           <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
             <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800  dark:border-gray-700">
               <li>
-                <a href="#" className="block py-2 pl-3 pr-4 text-black bg-blue-700 rounded md:bg-transparent md:text-black-700 md:p-0 dark:text-black" aria-current="page">
+                <a href="#" className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:text-black-700 md:p-0 dark:text-black text-lg" aria-current="page">
                   Beranda
                 </a>
               </li>
@@ -73,7 +73,7 @@ function Navbar() {
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-black-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-black-700 md:p-0 md:w-auto dark:text-black-400 dark:hover:text-black dark:focus:text-black dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-black-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-black-700 md:p-0 md:w-auto dark:text-black-400 dark:hover:text-black dark:focus:text-black dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent text-lg"
                 >
                   Layanan{" "}
                   <svg className="w-4 h-4 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -143,7 +143,7 @@ function Navbar() {
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-black-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-black-700 md:p-0 md:w-auto dark:text-black-400 dark:hover:text-black dark:focus:text-black dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-black-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-black-700 md:p-0 md:w-auto dark:text-black-400 dark:hover:text-black dark:focus:text-black dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent text-lg"
                 >
                   Blog{" "}
                   <svg className="w-4 h-4 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -213,7 +213,7 @@ function Navbar() {
                 <button
                   id="dropdownNavbarLink"
                   data-dropdown-toggle="dropdownNavbar"
-                  className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-black-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-black-700 md:p-0 md:w-auto dark:text-black-400 dark:hover:text-black dark:focus:text-black dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  className="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-black-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-black-700 md:p-0 md:w-auto dark:text-black-400 dark:hover:text-black dark:focus:text-black dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent text-lg"
                 >
                   Mitra{" "}
                   <svg className="w-4 h-4 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -283,11 +283,6 @@ function Navbar() {
           </div>
         </div>
       </nav>
-
-      <div className="pt-[50px]">
-        <h1 className="font-bold text-gray-600 text-3xl">Konsultasi Taman</h1>
-        <p className="pt-4">klik dibawah ini untuk memilih tanggal & waktu yang tersedia untuk memanggil konsultan kami</p>
-      </div>
     </div>
   );
 }
