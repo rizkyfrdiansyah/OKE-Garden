@@ -173,7 +173,7 @@ export default function Calender() {
         <br />
         <footer>
           <button id="calendar" onClick={handleClick}>
-            Book Appointment
+            Janjian Bertemu
           </button>
         </footer>
 
@@ -231,22 +231,29 @@ export default function Calender() {
         <div className="flex justify-center pt-4">
           <button
             type="button"
-            class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800"
+            class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-700 dark:text-green-700 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-800"
           >
             1 Lahan Taman
           </button>
           <button
             type="button"
-            class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800"
+            class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-700 dark:text-green-700 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-800"
           >
             2 Lahan Taman
           </button>
           <button
             type="button"
-            class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800"
+            class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-700 dark:text-green-700 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-800"
           >
             Lebih dari 2 Lahan Taman
           </button>
+        </div>
+        <div className="pt-[15px]">
+          <h1 className="flex justify-start font-bold text-lg pl-[310px] text-gray-600 pt-[20px]">Tema Taman</h1>
+          <p className="flex justify-start  pl-[310px] pt-[5px]">Pilih tema yang akan dibuat.</p>
+          <div id="toast-simple" className="flex items-center p-4 space-x-4 w-full max-w-xs text-gray-500 bg-white rounded-lg divide-x divide-gray-200 shadow dark:text-gray-400 dark:divide-yellow space-x dark:bg-yellow-100" role="alert">
+            <div className="pl-4 text-sm font-normal">Message sent successfully.</div>
+          </div>
         </div>
       </div>
     </>
