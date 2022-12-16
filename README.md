@@ -21,12 +21,12 @@ OKE Garden adalah sebuah website konsultasi terkait informasi taman yang sering 
 
 ## Home page
 
-![image](../screenshoot/Homepage.png)
+![image](./screenshoot/Homepage.png)
 
 ## Informasi
 
-![image](../screenshoot/Informasi.png)
+![image](./screenshoot/Informasi.png)
 
 ## Card and Ukuran Taman
 
-![image](../screenshoot/Card%20and%20Ukuran%20Taman.png)
+![image](./screenshoot/Card%20and%20Ukuran%20Taman.png)
