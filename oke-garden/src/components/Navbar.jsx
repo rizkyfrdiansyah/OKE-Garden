@@ -28,23 +28,23 @@ function Navbar() {
               </div>
               <ul className="py-1" aria-labelledby="user-menu-button">
                 <li>
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
-                    Dashboard
+                  <a href="/" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                    Beranda
                   </a>
                 </li>
                 <li>
                   <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
-                    Settings
+                    Layanan
                   </a>
                 </li>
                 <li>
                   <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
-                    Earnings
+                    Blog
                   </a>
                 </li>
                 <li>
                   <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
-                    Sign out
+                    Mitra
                   </a>
                 </li>
               </ul>
@@ -65,7 +65,7 @@ function Navbar() {
           <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
             <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800  dark:border-gray-700">
               <li>
-                <a href="#" className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:text-black-700 md:p-0 dark:text-black text-lg" aria-current="page">
+                <a href="/" className="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:text-black-700 md:p-0 dark:text-black text-lg" aria-current="page">
                   Beranda
                 </a>
               </li>

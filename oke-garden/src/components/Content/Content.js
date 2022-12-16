@@ -111,7 +111,7 @@ export default function Calender() {
 
         <p className="pt-8 flex justify-center font-bold text-2xl">{date.value && date.value.toDateString()}</p>
 
-        <h2>Pilih Waktu Konsultasi :</h2>
+        <h2 className="font-semibold">Pilih Waktu Konsultasi :</h2>
         {/* Slot Buttons */}
         <div className="btns">
           <div className="grid-button">
@@ -217,7 +217,7 @@ export default function Calender() {
                 <textarea
                   id="message"
                   rows={5}
-                  className="block p-2.5 w-[700px] text-sm text-black-900 bg-white-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-white-500 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="block p-2.5 w-[700px] text-sm text-black-900 bg-white-50 rounded-lg border-2 border-green-700 focus:ring-green-700 focus:border-white-500 dark:bg-white-700 dark:border-green-700 dark:placeholder-gray-400 dark:text-black dark:focus:ring-green-700 dark:focus:border-green-700"
                   placeholder="Jl. Serangkai 1 Perum, Bumi Jaya blok A No. 12 Kelurahan samping, Kecamatan Baru, Kota Tanjungpinang, Kepulauan Riau 29125, Indonesia"
                   defaultValue={""}
                 />
@@ -264,7 +264,7 @@ export default function Calender() {
         </div>
 
         <div className="pt-[40px] flex justify-center gap-8 ">
-          <div className="max-w-sm bg-white border border-green-600 rounded-lg shadow-md dark:bg-white dark:border-green-600">
+          <div className="max-w-sm bg-white border border-green-600 rounded-lg shadow-md dark:bg-white dark:border-green-600 drop-shadow">
             <a href="#">
               <img className="rounded-t-lg" src={tamanImage} alt="taman" />
             </a>
@@ -284,7 +284,7 @@ export default function Calender() {
               </a>
             </div>
           </div>
-          <div className="max-w-sm bg-white border border-green-600 rounded-lg shadow-md dark:bg-white dark:border-green-600">
+          <div className="max-w-sm bg-white border border-green-600 rounded-lg shadow-md dark:bg-white dark:border-green-600 drop-shadow">
             <a href="#">
               <img className="rounded-t-lg" src={taman2Image} alt="taman" />
             </a>
@@ -304,7 +304,7 @@ export default function Calender() {
               </a>
             </div>
           </div>
-          <div className="max-w-sm bg-white border border-green-600 rounded-lg shadow-md dark:bg-white dark:border-green-600">
+          <div className="max-w-sm bg-white border border-green-600 rounded-lg shadow-md dark:bg-white dark:border-green-600 drop-shadow">
             <a href="#">
               <img className="rounded-t-lg" src={taman3Image} alt="taman" />
             </a>
@@ -377,13 +377,13 @@ export default function Calender() {
         <div className="flex justify-end pt-[150px] pr-[150px]">
           <button
             type="button"
-            className="focus:outline-none text-green-700 bg-gray-50 hover:bg-gray-50 focus:ring-4 focus:ring-gray-50 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-50 dark:hover:bg-gray-50 dark:focus:ring-gray-50"
+            className="focus:outline-none text-green-700 bg-gray-50 hover:bg-gray-50 focus:ring-4 focus:ring-gray-50 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-50 dark:hover:bg-gray-50 dark:focus:ring-gray-50 drop-shadow-md"
           >
             Batal
           </button>
           <button
             type="button"
-            className="focus:outline-none text-white bg-green-800 hover:bg-green-800 focus:ring-4 focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-800 dark:hover:bg-green-800 dark:focus:ring-green-800"
+            className="focus:outline-none text-white bg-green-800 hover:bg-green-800 focus:ring-4 focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-800 dark:hover:bg-green-800 dark:focus:ring-green-800 drop-shadow-md"
           >
             OKE
           </button>
