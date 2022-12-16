@@ -20,7 +20,7 @@ function Navbar() {
               <span className="sr-only">Open user menu</span>
               <img className="w-8 h-8 rounded-full" src="https://cdn-icons-png.flaticon.com/512/2202/2202112.png" alt="user photo" />
             </button>
-            {/* Dropdown menu */}
+
             <div className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
               <div className="px-4 py-3">
                 <span className="block text-sm text-gray-900 dark:text-white">Bonnie Green</span>
@@ -80,7 +80,7 @@ function Navbar() {
                     <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
                 </button>
-                {/* Dropdown menu */}
+
                 <div id="dropdownNavbar" className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                   <ul className="py-1 text-sm text-black-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                     <li>
@@ -150,7 +150,7 @@ function Navbar() {
                     <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
                 </button>
-                {/* Dropdown menu */}
+
                 <div id="dropdownNavbar" className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                   <ul className="py-1 text-sm text-black-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                     <li>
@@ -220,7 +220,7 @@ function Navbar() {
                     <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
                 </button>
-                {/* Dropdown menu */}
+
                 <div id="dropdownNavbar" className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                   <ul className="py-1 text-sm text-black-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                     <li>

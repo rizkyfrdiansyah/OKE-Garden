@@ -1,4 +1,3 @@
-//Import calendar
 import { CalendarComponent } from "@syncfusion/ej2-react-calendars";
 import { useEffect, useState } from "react";
 import tamanImage from "../../assets/images/taman.jpg";
@@ -72,7 +71,6 @@ export default function Calender() {
               window.open(event.htmlLink);
             });
 
-            // get events
             gapi.client.calendar.events
               .list({
                 calendarId: "primary",
@@ -103,16 +101,14 @@ export default function Calender() {
           <p className="pt-4">klik dibawah ini untuk memilih tanggal & waktu yang tersedia untuk memanggil konsultan kami</p>
         </div>
 
-        {/* calendar */}
         <div className="calendar pt-[50px] pl-[50px]">
           <CalendarComponent onChange={setdata} value={date} />
-          {/* <Calendar/> */}
         </div>
 
         <p className="pt-8 flex justify-center font-bold text-2xl">{date.value && date.value.toDateString()}</p>
 
         <h2 className="font-semibold">Pilih Waktu Konsultasi :</h2>
-        {/* Slot Buttons */}
+
         <div className="btns">
           <div className="grid-button">
             <button onClick={(e) => settime(e.target.textContent)}>10:00</button>
