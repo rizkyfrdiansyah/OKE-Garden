@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
     <div>
-      <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded light:bg-gray-400">
+      <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded light:bg-gray-400 border-2 drop-shadow-md">
         <div className="container flex flex-wrap items-center justify-between mx-auto px-4">
           <a href="/" className="flex items-center">
             <img src="https://okegarden.com/assets/img/logo.png" className="h-6 mr-3 sm:h-9" alt="OKE Garden Logo" />

@@ -1,6 +1,9 @@
 //Import calendar
 import { CalendarComponent } from "@syncfusion/ej2-react-calendars";
 import { useEffect, useState } from "react";
+import tamanImage from "../../assets/images/taman.jpg";
+import taman2Image from "../../assets/images/taman2.jpg";
+import taman3Image from "../../assets/images/taman3.jpg";
 
 export default function Calender() {
   const [date, setdata] = useState(new Date());
@@ -108,7 +111,7 @@ export default function Calender() {
 
         <p className="pt-8 flex justify-center font-bold text-2xl">{date.value && date.value.toDateString()}</p>
 
-        <h2>Pilih Waktu Konsultasi</h2>
+        <h2>Pilih Waktu Konsultasi :</h2>
         {/* Slot Buttons */}
         <div className="btns">
           <div className="grid-button">
@@ -178,9 +181,9 @@ export default function Calender() {
         </footer>
 
         <div className="pt-[100px]">
-          <h1 className="flex justify-start font-bold text-3xl pl-[310px] text-gray-600">Informasi Data Diri</h1>
+          <h1 className="flex justify-start font-bold text-3xl pl-[150px] text-gray-600">Informasi Data Diri</h1>
         </div>
-        <div className="flex justify-center pt-8">
+        <div className="flex justify-center pt-8 pr-[320px]">
           <form className="w-full max-w-4xl">
             <div className="flex flex-wrap -mx-3 mb-6 ">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -188,7 +191,7 @@ export default function Calender() {
                   Nama Lengkap
                 </label>
                 <input
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-200"
                   id="grid-first-name"
                   type="text"
                   placeholder="Yudha Wahyu"
@@ -200,14 +203,14 @@ export default function Calender() {
                   No HP
                 </label>
                 <input
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-200"
                   id="grid-first-name"
                   type="int"
                   placeholder="+62 852 2324 4747"
                 />
                 <p className="text-red-500 text-xs italic">Harap isi kolom ini.</p>
               </div>
-              <div className="pl-2 pt-4">
+              <div className="pl-4 pt-4">
                 <label htmlFor="message" className="block mb-2 text-sm font-medium text-black-900 dark:text-black">
                   Alamat
                 </label>
@@ -224,36 +227,166 @@ export default function Calender() {
         </div>
 
         <div className="pt-[100px]">
-          <h1 className="flex justify-start font-bold text-3xl pl-[310px] text-gray-600">Informasi Data Diri</h1>
-          <h1 className="flex justify-start font-bold text-lg pl-[310px] text-gray-600 pt-[20px]">Lahan Taman</h1>
-          <p className="flex justify-start  pl-[310px] pt-[5px]">Pilih jumlah lahan taman yang akan dibuat.</p>
+          <h1 className="flex justify-start font-bold text-3xl pl-[150px] text-gray-600">Informasi Konsultasi Taman</h1>
+          <h1 className="flex justify-start font-bold text-lg pl-[150px] text-gray-600 pt-[20px]">Lahan Taman</h1>
+          <p className="flex justify-start  pl-[150px] pt-[5px]">Pilih jumlah lahan taman yang akan dibuat.</p>
         </div>
-        <div className="flex justify-center pt-4">
+        <div className="flex justify-center pt-4 pr-[700px]">
           <button
             type="button"
-            class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-700 dark:text-green-700 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-800"
+            class="text-green-700 hover:text-white border-2 border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-700 dark:text-green-700 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-800"
           >
             1 Lahan Taman
           </button>
           <button
             type="button"
-            class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-700 dark:text-green-700 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-800"
+            class="text-green-700 hover:text-white border-2 border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-700 dark:text-green-700 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-800"
           >
             2 Lahan Taman
           </button>
           <button
             type="button"
-            class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-700 dark:text-green-700 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-800"
+            class="text-green-700 hover:text-white border-2 border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-700 dark:text-green-700 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-800"
           >
             Lebih dari 2 Lahan Taman
           </button>
         </div>
         <div className="pt-[15px]">
-          <h1 className="flex justify-start font-bold text-lg pl-[310px] text-gray-600 pt-[20px]">Tema Taman</h1>
-          <p className="flex justify-start  pl-[310px] pt-[5px]">Pilih tema yang akan dibuat.</p>
-          <div id="toast-simple" className="flex items-center p-4 space-x-4 w-full max-w-xs text-gray-500 bg-white rounded-lg divide-x divide-gray-200 shadow dark:text-gray-400 dark:divide-yellow space-x dark:bg-yellow-100" role="alert">
-            <div className="pl-4 text-sm font-normal">Message sent successfully.</div>
+          <h1 className="flex justify-start font-bold text-lg pl-[150px] text-gray-600 pt-[20px]">Tema Taman</h1>
+          <p className="flex justify-start  pl-[150px] pt-[5px]">Pilih tema yang akan dibuat.</p>
+        </div>
+        <div className="flex justify-center pr-[450px] pt-4">
+          <div id="toast-simple" className="flex items-center p-4 space-x-4 w-full max-w-3xl text-gray-500 bg-white rounded-lg divide-x divide-gray-200 shadow dark:text-gray-400 dark:divide-yellow space-x dark:bg-yellow-100" role="alert">
+            <div className="pl-4 text-sm font-normal text-black">
+              <b>Catatan :</b> Jika anda belum memiliki inspirasi tema taman maka anda bisa melewati tahapan ini, konsultan kami akan memberikan rekomendasi terbaik untuk taman anda.
+            </div>
           </div>
+        </div>
+
+        <div className="pt-[40px] flex justify-center gap-8 ">
+          <div className="max-w-sm bg-white border border-green-600 rounded-lg shadow-md dark:bg-white dark:border-green-600">
+            <a href="#">
+              <img className="rounded-t-lg" src={tamanImage} alt="taman" />
+            </a>
+            <div className="p-5">
+              <a href="#">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-600">Taman Minimalis</h5>
+              </a>
+              <p className="mb-3 font-normal text-black-700 dark:text-black-400 flex justify-start">Taman yang indah dilahan yang sempit dengan berkonsep minimalis.</p>
+              <a
+                href="#"
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-gray-50 bg-green-700 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-white-300 dark:bg-white-600 dark:hover:bg-white-700 dark:focus:ring-white-800"
+              >
+                Pilih
+                <svg aria-hidden="true" className="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div className="max-w-sm bg-white border border-green-600 rounded-lg shadow-md dark:bg-white dark:border-green-600">
+            <a href="#">
+              <img className="rounded-t-lg" src={taman2Image} alt="taman" />
+            </a>
+            <div className="p-5">
+              <a href="#">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-600">Taman Kering</h5>
+              </a>
+              <p className="mb-3 font-normal text-black-700 dark:text-black-400 flex justify-start">Taman yang dirancang untuk menghasilkan suasana alam didalam dan diluar rumah.</p>
+              <a
+                href="#"
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-gray-50 bg-green-700 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-white-300 dark:bg-white-600 dark:hover:bg-white-700 dark:focus:ring-white-800"
+              >
+                Pilih
+                <svg aria-hidden="true" className="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div className="max-w-sm bg-white border border-green-600 rounded-lg shadow-md dark:bg-white dark:border-green-600">
+            <a href="#">
+              <img className="rounded-t-lg" src={taman3Image} alt="taman" />
+            </a>
+            <div className="p-5">
+              <a href="#">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-600">Taman Tropis</h5>
+              </a>
+              <p className="mb-3 font-normal text-black-700 dark:text-black-400 flex justify-start">Taman yang paling sesuai dengan iklim di Indonesia.</p>
+              <a
+                href="#"
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-gray-50 bg-green-700 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-white-300 dark:bg-white-600 dark:hover:bg-white-700 dark:focus:ring-white-800"
+              >
+                Pilih
+                <svg aria-hidden="true" className="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h1 className="flex justify-start font-bold text-lg pl-[150px] text-gray-600 pt-[50px]">Estimasi Ukuran Taman</h1>
+        </div>
+
+        <div className="flex justify-start pt-4 gap-10 pl-[140px]">
+          <button
+            type="button"
+            class="text-green-700 hover:text-white border-2 border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-700 dark:text-green-700 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
+            10m2
+          </button>
+          <button
+            type="button"
+            class="text-green-700 hover:text-white border-2 border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-700 dark:text-green-700 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
+            11-20m2
+          </button>
+          <button
+            type="button"
+            class="text-green-700 hover:text-white border-2 border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-700 dark:text-green-700 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
+            21-30m2
+          </button>
+          <button
+            type="button"
+            class="text-green-700 hover:text-white border-2 border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-700 dark:text-green-700 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
+            31-40m2
+          </button>
+          <button
+            type="button"
+            class="text-green-700 hover:text-white border-2 border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-700 dark:text-green-700 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
+            41-50m2
+          </button>
+          <button
+            type="button"
+            class="text-green-700 hover:text-white border-2 border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-700 dark:text-green-700 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
+            51-60m2
+          </button>
+          <button
+            type="button"
+            class="text-green-700 hover:text-white border-2 border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-700 dark:text-green-700 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
+            100m2
+          </button>
+        </div>
+        <div className="flex justify-end pt-[150px] pr-[150px]">
+          <button
+            type="button"
+            className="focus:outline-none text-green-700 bg-gray-50 hover:bg-gray-50 focus:ring-4 focus:ring-gray-50 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-50 dark:hover:bg-gray-50 dark:focus:ring-gray-50"
+          >
+            Batal
+          </button>
+          <button
+            type="button"
+            className="focus:outline-none text-white bg-green-800 hover:bg-green-800 focus:ring-4 focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-800 dark:hover:bg-green-800 dark:focus:ring-green-800"
+          >
+            OKE
+          </button>
         </div>
       </div>
     </>
